@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		body{
+			background-image: url(background.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: green;
+		}
+		#apple{
+			width: 100px;
+			height: 100px;
+			background-color: blueviolet;
+
+			animation-name: picking;
+			animation-duration:1s ;
+			animation-iteration-count: infinite;
+
+		}
+
+		@keyframes picking{
+	0% {background color:  yellow}
+	25% {background color: red}
+	50% {background-color: blue;}
+	75% {background-color: purple;}
+	100% {background-color: green;}
+
+}
+
+	</style>
+	
+</head>
+<body>
+
+	<div id="apple"></div>
+
+</body>
+</html>
