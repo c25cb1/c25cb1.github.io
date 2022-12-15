@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+
+</head>
+
+
+<body>
+
+<!-- strategy:
+1. count the clicks and store them in a variable
+2. if the click is even then do one thing
+3. if the click is odd then do another thing -->
+
+<audio src="takingoff.mp3" id="song" controls ></audio>
+
+<script type="text/javascript">
+	var clickCounter= 0;
+
+document.addEventListener("click", function(){
+	clickCounter= clickCounter +1
+
+	console.log(clickCounter);
+
+	if(clickCounter%2==0){	
+		song.pause()
+	document.body.style.backgroundColor="pink"
+}
+
+	if(clickCounter%2==1){
+		song.play()
+	document.body.style.backgroundColor="blue"
+	}
+})
+
+</script>
+
+
+
+</body>
+</html>
