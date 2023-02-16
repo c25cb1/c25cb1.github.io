@@ -11,11 +11,10 @@
         }
 
 
-
     </style>
 </head>
 <body>
-<h1>Click on the boxes for a picture to appear!<h1>
+<h1>Summer in pictues:) Click on the boxes for a picture to appear!<h1>
 
 <br><br>
 
@@ -33,21 +32,18 @@
             square.style.width = "100px";
             square.style.backgroundSize= "contain";
 
-            square.style.height = "300px";
+            square.style.height = "100px";
             square.style.display = "inline-block";
             square.style.margin = "10px";
             square.style.backgroundRepeat = "no-repeat";
             square.style.border = "10px";
-            square.style.backgroundColor = "lightgreenbos";
-
-            square.style.backgroundImage = "url(greencover.jpg)";
-
-            square.style.backgroundSize = "contain";
+            square.style.backgroundColor = "green";
+            
+            square.style.backgroundSize = "cover";
             square.id = "square" + x;
- 
 
             square.addEventListener("click", function(){
-                square.style.backgroundImage = "url("+ x+"bos.jpg)";
+                square.style.backgroundImage = "url("+ x+".jpg)";
         
 
             })

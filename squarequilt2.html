@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+<style type="text/css">
+	.breakfast{
+		width: 100px;
+		height: 100px;
+		background-color: lightblue;
+		display: inline-block;
+		margin: 3px;
+		background-image:url(pancakes.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	function makePancakes (x){
+	var pancakes = document.
+		createElement("div");
+	document.body.appendChild(pancakes)
+	pancakes.classList.add("breakfast");
+	pancakes.innerText = x;
+
+	pancakes.addEventListener("click", function(){
+		pancakes.style.backgroundImage="url (waffles.jpg)"
+
+	})
+}
+
+for (var i=0; i<1000;i=i+1) 
+	{makePancakes(i)}
+
+</script>
+
+</body>
+</html>

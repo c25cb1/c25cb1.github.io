@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style type="text/css">
+body{
+background-color: rgb(46,57,108)
+}
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+document.addEventListener("mousemove", function(event){console.log(event.clientX, event.clientY);
+//this is where we are logging the X or Y values that will appear in the console
+
+document.body.style.backgroundColor="rgb(0," +event. clientX + "," +event.clientY+"0";
+//this is setting red to be zero and the X to be green and Y to be blue. when using the console log from above, the color will change according to where the mouse moves on the screen.
+
+})
+
+
+</script>
+
+</body>
+</html>
