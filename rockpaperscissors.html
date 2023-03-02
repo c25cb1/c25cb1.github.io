@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+<style type="text/css">
+	#box{
+		border: 1px solid black;
+		width: 400px;
+		height: 400px;
+		display: inline-block;
+		margin: 5px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#box2{
+		border: 1px solid black;
+		width: 400px;
+		height: 400px;
+		display: inline-block;
+		margin: 5px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+</style>
+</head>
+<body>
+	<div id="box"></div>
+ 	<div id= "box2"></div>
+</center>
+
+<script type="text/javascript">
+
+	var gifts=[ "rock.jpg", "paper.jpg", "scissors.jpg",]
+
+box.addEventListener("click", function(){
+
+var randomNumber = Math.round(Math.random()*2);
+console.log(randomNumber)
+
+box.style.backgroundImage = "url("+ gifts[randomNumber] +")";
+
+console.log(randomNumber)
+
+})
+box2.addEventListener("click", function(){
+
+var randomNumber = Math.round(Math.random()*2);
+console.log(randomNumber)
+
+box2.style.backgroundImage = "url("+ gifts[randomNumber] +")";
+
+console.log(randomNumber)
+})
+
+
+
+</script>
+
+</body>
+</html>
