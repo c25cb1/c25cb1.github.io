@@ -4,7 +4,6 @@
 	<title></title>
 
 	<style>
-		
 
 		#buggy{
 			width:300px;
@@ -16,11 +15,43 @@
 			background-repeat: no-repeat;
 
 		}
+		#camp{
+			height: 300px;
+			width: 300px;
+			left: 1100px;
+			top: 275px;
+			position: relative;
+			background-image: url(camp.jpg);
+			background-size: cover;
+
+		}
+		#met{
+			height: 300px;
+			width: 300px;
+			right: 10px;
+			top: 1px;
+			position: relative;
+			background-image: url(met.jpg);
+			background-size: cover;
+		}
+
+		body{
+			height: 500px;
+			width: 500px;
+			background-color: lightgreen;
+			background-size: contain;
+		}
+
+
 	</style>
 </head>
 <body>
 
 	<div id="buggy"></div>
+
+	<div id="camp"></div>
+
+	<div id="met"></div>
 
 	<script type="text/javascript">
 		buggy.style.left = "0px";
@@ -41,7 +72,6 @@
 
 			buggy.style.left = x + "px";
 		}
-
 
 		})
 
